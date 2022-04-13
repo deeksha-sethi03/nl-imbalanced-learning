@@ -57,7 +57,7 @@ _______________________________________________________________________________
     MD      -   The maximum depth of the tree.
     CCP     -   Complexity parameter used for Minimal Cost-Complexity Pruning. 
     Source: Scikit Learn 
-    (https://scikit-learn.org/stable/modules/generated/sklearn.metrics.f1_score.html)
+    (https://scikit-learn.org/stable/modules/generated/sklearn.tree.DecisionTreeClassifier.html)
 _______________________________________________________________________________
 
 Performance metric used:
