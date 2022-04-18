@@ -499,7 +499,12 @@ for NUM_SAMPLES in range(1, NUM_SAMPLES_PER_CLASS+1):
                 FINAL = BEGIN+testdata_instance_per_class[lab+1]
                 
         
-        clf = KNeighborsClassifier(n_neighbors = 1)
+        if(NUM_SAMPLES <= 2):
+            clf = KNeighborsClassifier(n_neighbors = 1)
+        elif(NUM_SAMPLES <= 4 and NUM_SAMPLES > 2):
+            clf = KNeighborsClassifier(n_neighbors = 3)
+        elif(NUM_SAMPLES > 4):
+            clf = KNeighborsClassifier(n_neighbors = 5)
         clf.fit(X_train, y_train.ravel())
         Y_PRED = clf.predict(X_test)
         F1SCORE = f1_score(y_test, Y_PRED, average='macro')

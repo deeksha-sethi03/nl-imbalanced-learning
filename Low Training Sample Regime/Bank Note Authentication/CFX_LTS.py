@@ -532,7 +532,10 @@ for NUM_SAMPLES in range(1, NUM_SAMPLES_PER_CLASS+1):
         FEATURE_MATRIX_TRAIN = CFX.transform(X_train, INA, 10000, EPSILON_1, DT)
         FEATURE_MATRIX_VAL = CFX.transform(X_test, INA, 10000, EPSILON_1, DT)            
 
-        clf = KNeighborsClassifier(n_neighbors = 1)
+        if(NUM_SAMPLES <= 2):
+            clf = KNeighborsClassifier(n_neighbors = 1)
+        elif(NUM_SAMPLES > 2):
+            clf = KNeighborsClassifier(n_neighbors = 3)
         clf.fit(FEATURE_MATRIX_TRAIN, y_train.ravel())
 
         y_pred = clf.predict(FEATURE_MATRIX_VAL)
