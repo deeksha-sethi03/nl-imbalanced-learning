@@ -5,7 +5,7 @@ All the datasets used in the experiments above can be found in the following dri
 The crux of the paper is provided in the following diagram.
 
 <img
-src="architecture_diagram/NL_architecture_1.png"
+src="architecture_diagram/NL_Architecture_1.png"
 raw=true
 alt="Subject Pronouns"
 style="margin-right: 10px;"
