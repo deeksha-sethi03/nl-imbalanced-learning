@@ -3,7 +3,8 @@ Created on Tue Feb 22 12:17:06 2022
 
 Author: Harikrishnan NB (harikrishnannb07@gmail.com)
 Code Description: A python code to  demonstrate the overall performance change
-of a dataset in the low training sample regime after employing the CFX features.
+of the Statlog (Heart) dataset in the low training sample regime after employing 
+the CFX features.
 """
 
 import os
@@ -17,10 +18,10 @@ Variable description:
 _______________________________________________________________________________
     F1SCORE_FINAL_MATRIX_SA     -   F1 score matrix obtained from the low 
                                     training sample regime code of stand-alone 
-                                    algorithms for a dataset.
+                                    algorithms for the dataset.
     F1SCORE_FINAL_MATRIX_CFX    -   F1 score matrix obtained from the low 
                                     training sample regime code of CFX+ML 
-                                    algorithms for a dataset.
+                                    algorithms for the dataset.
     Change                      -   Performance change percentage in CFX+ML 
                                     algorithms with respect to the stand-alone 
                                     algorithms.
