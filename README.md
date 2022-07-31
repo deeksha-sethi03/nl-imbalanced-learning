@@ -1,6 +1,6 @@
 # Neurochaos Feature Transformation and Classification for Imbalanced Learning
 Neurochaos Learning codes for classification in imbalanced learning.
-All the datasets used in the experiments above can be found in the following drive link: https://drive.google.com/drive/folders/1XAKc88jzGhtopqZKSrIptpabFqoN2wvm?usp=sharing
+All the datasets used in the experiments above can be found in the `Datasets` [folder](https://github.com/deeksha-sethi03/nl-imbalanced-learning/tree/main/Datasets)
 
 The crux of the paper is provided in the following diagram.
 
