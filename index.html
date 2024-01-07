@@ -1,0 +1,63 @@
+**Project Name**
+
+Deeksha Sethi: <email>myemail</email>
+
+Date
+
+<img src="imgs/zero.png" width="200px">
+
+(#) Contents
+
+ - [Fitting a Voxel Grid](#q11)  
+ - [Fitting a Pointcloud](#q12) 
+
+
+(#) Exploring Loss Functions
+
+<a name="q11">
+(##) 1.1. Fitting a Voxel Grid
+
+The goal is to define the binary cross entropy loss to help fit a 3D binary voxel 
+grid.
+
+Command: 
+
+`python fit_data.py --type 'vox' --max-iter 25000`
+
+
+| Source Voxel Grid | Ground Truth Voxel Grid | Optimized Voxel Grid |
+| --- | --- | --- |
+| <img src="results/q11_vg_src_before_optim.gif"> | <img src="results/q11_vg_target.gif"> | <img src="results/q11_vg_src.gif"> |
+
+
+<a name="q12">
+(##) 1.2. Fitting a PointCloud
+
+The goal is to implement the chamfer loss function to help fit a 3D pointcloud. 
+
+Command: 
+
+`python fit_data.py --type 'point' --max-iter 12000`
+
+
+| Source Pointcloud | Ground Truth Pointcloud | 
+| --- | --- |
+| <img src="results/0_q12_pc_src.gif"> | <img src="results/q12_pc_target.gif"> |
+
+
+
+| 3k Iters | 6k Iters | 9k Iters | 12k Iters |
+| --- | --- | --- |--- |
+| <img src="results/3000_q12_pc_src.gif"> | <img src="results/6000_q12_pc_src.gif"> | <img src="results/9000_q12_pc_src.gif"> | <img src="results/12000_q12_pc_src.gif"> |
+
+
+<!--- Markdeep & image comparison library - probably no need to change anything below -->
+<style class="fallback">body{visibility:hidden;white-space:pre;font-family:monospace}</style><script src="./resources/markdeep.min.js"></script><script>window.alreadyProcessedMarkdeep||(document.body.style.visibility="visible")</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="./resources/jquery.event.move.js"></script>
+<script src="./resources/jquery.twentytwenty.js"></script>
+<link href="./resources/offcanvas.css" rel="stylesheet">
+<link href="./resources/twentytwenty.css" rel="stylesheet" type="text/css" />
+<script>
+$(window).load(function(){$(".twentytwenty-container").twentytwenty({default_offset_pct: 0.5});});
+</script>
